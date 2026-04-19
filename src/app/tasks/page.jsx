@@ -4,7 +4,7 @@ import React from 'react';
 
 const TasksPage = async() => {
     const tasks = await getTasks();
-    console.log(tasks);
+    // console.log(tasks);
     return (
         <div>
             <h1>Task:{tasks.length}</h1>
