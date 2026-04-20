@@ -81,7 +81,7 @@ const AddTask = ({ createTask }) => {
                                         <Button slot="close" variant="secondary">
                                             Cancel
                                         </Button>
-                                        <Button type="submit">Send Message</Button>
+                                        <Button type="submit" slot="close">Send Message</Button>
                                     </Modal.Footer>
                                 </form>
                             </Surface>
