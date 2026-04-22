@@ -9,8 +9,8 @@ const TasksPage = async() => {
     const tasks = await getTasks();
     // console.log(tasks);
     return (
-        <div>
-            <h1 className='mb-5'>Task:{tasks.length}</h1>
+        <div className='max-w-7xl mx-auto my-20'>
+            <h1 className='mb-5 text-3xl'>Task: {tasks.length}</h1>
             <AddTask createTask={createTask}></AddTask>
             <Link href="/tasks/new"><button>Add New Task</button></Link>
             <div className='grid grid-cols-3 gap-5 mt-5'>

@@ -1,4 +1,5 @@
-import { Link } from "@heroui/react";
+// import { Link } from "@heroui/react";
+import Link from "next/link";
 import { ThemeSwitch } from "./ThemeSwitch";
 
 const Navbar = () => {
