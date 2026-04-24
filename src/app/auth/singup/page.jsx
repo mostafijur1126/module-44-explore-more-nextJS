@@ -14,9 +14,15 @@ const singUpPage = () => {
             name: userData.name,
             email: userData.email,
             password: userData.password,
-            // callbackURL: "https://example.com/callback",
+            callbackURL: "/",
         });
-        console.log({ data, error });
+        if(error){
+            alert("Error sing up: " + error.message);
+        }
+        if(data){
+            alert("singup successfull!");
+        }
+        // console.log({ data, error });
     }
     return (
         <div className='w-full h-screen flex items-center justify-center'>
